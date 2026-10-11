@@ -1,6 +1,6 @@
 # Musiri Pumps website
 
-A responsive, single-page product and enquiry website based on the supplied HTML concept.
+A responsive, single-page engineering catalog and enquiry website based on the supplied HTML concept.
 
 ## Preview
 
