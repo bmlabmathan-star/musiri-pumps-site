@@ -79,13 +79,6 @@
   .hero h1{font-size:clamp(2.8rem,6.4vw,5.4rem);font-weight:700;max-width:12ch}
   .hero p.lead{margin-top:22px;max-width:50ch;color:#cfe5e9;font-size:1.12rem}
   .hero .cta{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
-  .impeller{width:100%;max-width:470px;justify-self:center}
-  .spin{transform-origin:200px 200px;animation:spin 14s linear infinite}
-  .ripple{transform-box:fill-box;transform-origin:center;animation:ripple 4.5s ease-out infinite;opacity:0}
-  .ripple:nth-of-type(2){animation-delay:1.5s}
-  .ripple:nth-of-type(3){animation-delay:3s}
-  @keyframes spin{to{transform:rotate(360deg)}}
-  @keyframes ripple{0%{transform:scale(.7);opacity:.55}100%{transform:scale(1.18);opacity:0}}
 
   /* finder */
   .finder-wrap{margin-top:-96px;position:relative;z-index:5}
@@ -164,7 +157,6 @@
     nav a.top,nav button.top{padding:12px 4px;width:100%;text-align:left}
     .drop{display:block;position:static;border:0;box-shadow:none;padding:0 0 6px 14px;min-width:0}
     .hero .wrap{grid-template-columns:1fr;padding:48px 0 130px}
-    .impeller{max-width:300px;order:-1}
     .finder form{grid-template-columns:1fr}
     .apps{grid-template-columns:1fr}
     .tabs{flex-direction:row;overflow-x:auto}
@@ -177,8 +169,6 @@
     .sec{padding:60px 0}
   }
   @media (prefers-reduced-motion:reduce){
-    .spin,.ripple{animation:none}
-    .ripple{opacity:.25}
     html{scroll-behavior:auto}
   }
 
@@ -269,6 +259,16 @@
     .enq{padding:24px 20px}
     .enq .row{grid-template-columns:1fr;gap:0}
   }
+  /* flowing-water background and static hydraulic schematic */
+  body{background-color:#f6f7f5;background-image:radial-gradient(ellipse at 4% 18%,transparent 0 84px,rgba(39,123,138,.085) 85px 86px,transparent 87px 126px,rgba(39,123,138,.06) 127px 128px,transparent 129px 170px),radial-gradient(ellipse at 96% 68%,transparent 0 110px,rgba(39,123,138,.065) 111px 112px,transparent 113px 164px,rgba(39,123,138,.045) 165px 166px,transparent 167px 220px),linear-gradient(rgba(39,123,138,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(39,123,138,.018) 1px,transparent 1px);background-size:100% 100%,100% 100%,36px 36px,36px 36px;background-attachment:fixed}
+  .hero{background-color:rgba(237,242,241,.91);background-image:linear-gradient(rgba(26,73,86,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(26,73,86,.045) 1px,transparent 1px),radial-gradient(ellipse at 8% 78%,transparent 0 110px,rgba(39,123,138,.09) 111px 112px,transparent 113px 160px,rgba(39,123,138,.06) 161px 162px,transparent 163px 215px);background-size:32px 32px,32px 32px,420px 320px;background-position:0 0,0 0,left bottom;background-repeat:repeat,repeat,no-repeat}
+  .hero-visual{overflow:hidden}
+  .flow-schematic{display:block;width:100%;height:auto;max-width:680px;margin:12px auto 10px}
+  .products{background-color:rgba(233,238,238,.91);background-image:radial-gradient(ellipse at 100% 0,transparent 0 115px,rgba(39,123,138,.06) 116px 117px,transparent 118px 170px,rgba(39,123,138,.04) 171px 172px,transparent 173px 225px);background-repeat:no-repeat;background-size:420px 330px;background-position:right top}
+  .contact{background-color:rgba(240,243,242,.92);background-image:radial-gradient(ellipse at 0 100%,transparent 0 110px,rgba(39,123,138,.07) 111px 112px,transparent 113px 170px,rgba(39,123,138,.045) 171px 172px,transparent 173px 230px);background-repeat:no-repeat;background-size:420px 330px;background-position:left bottom}
+  .why{background-image:radial-gradient(ellipse at 100% 10%,transparent 0 120px,rgba(117,212,223,.09) 121px 122px,transparent 123px 185px,rgba(117,212,223,.055) 186px 187px,transparent 188px 250px);background-repeat:no-repeat;background-size:480px 360px;background-position:right top}
+  .visual-header{color:#cde2e5}
+  @media(max-width:600px){.visual-header,.visual-foot{position:relative;z-index:1;background:#132c39}}
 </style>
 </head>
 <body>
@@ -336,8 +336,8 @@
   <div class="wrap">
     <div class="hero-copy">
       <p class="eyebrow">PUMP SYSTEMS / APPLICATION ENGINEERING</p>
-      <h1>Water movement, engineered for the job.</h1>
-      <p class="lead">Explore pump types by water source and application. Share the operating conditions with our team to narrow the selection to the right pump range.</p>
+      <h1>Use water flow to move more water.</h1>
+      <p class="lead">Water flow and gravity supply the driving force, so an electrical connection is not required. Explore the flow path and share your site conditions with our team.</p>
       <div class="cta">
         <a class="btn btn-brass" href="#finder">Find a pump</a>
         <a class="btn btn-line" href="#contact">Request a quote</a>
@@ -345,33 +345,42 @@
     </div>
 
     <div class="hero-visual">
-      <div class="visual-header"><span>FIG. 01 / IMPELLER ASSEMBLY</span><span>SCHEMATIC</span></div>
-    <svg class="impeller" viewBox="0 0 400 400" role="img" aria-label="Pump impeller schematic inside a volute casing">
-      <g fill="none" stroke="#1F8EA3" stroke-width="3">
-        <circle class="ripple" cx="200" cy="200" r="150"/>
-        <circle class="ripple" cx="200" cy="200" r="150"/>
-        <circle class="ripple" cx="200" cy="200" r="150"/>
-      </g>
-      <!-- volute casing with discharge -->
-      <path d="M200 30 A170 170 0 1 0 370 200 L370 120 L330 120 L330 200 A130 130 0 1 1 200 70 Z" fill="#114756" stroke="#1F8EA3" stroke-width="3"/>
-      <circle cx="200" cy="200" r="118" fill="#0B3340" stroke="#2c6071" stroke-width="2"/>
-      <g class="spin">
-        <g fill="none" stroke="#BFE3E9" stroke-width="7" stroke-linecap="round">
-          <path id="blade" d="M200 178 C 220 150 262 134 304 142"/>
-          <use href="#blade" transform="rotate(45 200 200)"/>
-          <use href="#blade" transform="rotate(90 200 200)"/>
-          <use href="#blade" transform="rotate(135 200 200)"/>
-          <use href="#blade" transform="rotate(180 200 200)"/>
-          <use href="#blade" transform="rotate(225 200 200)"/>
-          <use href="#blade" transform="rotate(270 200 200)"/>
-          <use href="#blade" transform="rotate(315 200 200)"/>
+      <div class="visual-header"><span>FIG. 01 / FLOW-DRIVEN PUMPING</span><span>SCHEMATIC</span></div>
+      <svg class="flow-schematic" viewBox="0 0 720 430" role="img" aria-label="Schematic showing elevated source water flowing through a pump and up to a delivery tank">
+        <defs>
+          <pattern id="fine-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#b9d8dc" stroke-opacity=".08" stroke-width="1"/></pattern>
+          <marker id="flow-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#75d4df"/></marker>
+          <marker id="lift-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#ef6b3a"/></marker>
+        </defs>
+        <rect width="720" height="430" fill="url(#fine-grid)"/>
+        <g fill="none" stroke="#8aaab2" stroke-width="2" opacity=".65">
+          <path d="M20 192H700" stroke-dasharray="5 7"/>
+          <path d="M20 382H700"/>
+          <path d="M35 75h166v102H35z"/>
+          <path d="M35 119h166" stroke="#75d4df" stroke-width="5"/>
+          <path d="M528 52h150v92H528z"/>
+          <path d="M528 102h150" stroke="#75d4df" stroke-width="5"/>
         </g>
-        <circle cx="200" cy="200" r="30" fill="#C98A2B"/>
-        <circle cx="200" cy="200" r="11" fill="#0B3340"/>
-      </g>
-      <path d="M330 120 L370 120" stroke="#BFE3E9" stroke-width="3"/>
-    </svg>
-      <div class="visual-foot"><span>HYDRAULIC SYSTEM</span><span>MODEL DEPENDENT</span></div>
+        <path d="M38 122c15-8 28 8 42 0s28 8 42 0 28 8 42 0 23 4 33 0v52H38z" fill="#277b8a" fill-opacity=".28"/>
+        <path d="M531 105c14-8 27 8 41 0s27 8 41 0 27 8 41 0 15 5 21 2v34H531z" fill="#277b8a" fill-opacity=".28"/>
+        <g fill="#b9d8dc" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">
+          <text x="37" y="57">01 / SOURCE RESERVOIR</text>
+          <text x="530" y="33">03 / DELIVERY</text>
+          <text x="267" y="348">02 / FLOW-DRIVEN PUMP</text>
+        </g>
+        <path d="M201 148h26v175h67" fill="none" stroke="#75d4df" stroke-width="12" stroke-linejoin="round"/>
+        <path d="M210 150v84m0 27v46" fill="none" stroke="#c5f3f5" stroke-width="3" marker-end="url(#flow-arrow)"/>
+        <rect x="289" y="292" width="165" height="82" rx="3" fill="#173b49" stroke="#75d4df" stroke-width="3"/>
+        <path d="M307 312h129M307 354h129" stroke="#5c8792" stroke-width="2"/>
+        <path d="M321 333h101" stroke="#c5f3f5" stroke-width="3" marker-end="url(#flow-arrow)"/>
+        <path d="M454 333h104V104" fill="none" stroke="#ef6b3a" stroke-width="12" stroke-linejoin="round"/>
+        <path d="M474 333h62V126" fill="none" stroke="#ffe0d3" stroke-width="3" marker-end="url(#lift-arrow)"/>
+        <path d="M185 169h-18m392 22h-28" stroke="#b9d8dc" stroke-width="1.5"/>
+        <text x="47" y="212" fill="#8aaab2" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5">DRIVE FLOW</text>
+        <text x="567" y="214" fill="#8aaab2" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5">LIFTED FLOW</text>
+        <path d="M25 382h670" stroke="#476976" stroke-width="2"/>
+      </svg>
+      <div class="visual-foot"><span>WATER FLOW = DRIVE INPUT</span><span>NO ELECTRICITY REQUIRED</span></div>
     </div>
   </div>
 </section>
