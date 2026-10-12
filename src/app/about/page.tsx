@@ -30,7 +30,7 @@ export default function AboutPage() {
         </div>
         <p className="text-sm leading-6 text-steel">{aboutContent.notIncluded}</p>
         <p className="text-sm text-steel">
-          Contact placeholders: {site.email} · {site.phone}
+          Contact: {site.email} · {site.phone}
         </p>
       </Container>
     </>

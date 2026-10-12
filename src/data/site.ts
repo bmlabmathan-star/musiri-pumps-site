@@ -1,7 +1,6 @@
 /**
- * Editable company and contact placeholders.
- * Replace these values with real MusiR Pumps details when they are available.
- * Do not treat any of this as verified company information.
+ * Editable company and contact details.
+ * Contact details below were provided by the company owner.
  */
 
 export const site = {
@@ -9,14 +8,9 @@ export const site = {
   tagline: "Infinite Flow, Zero Energy",
   shortDescription:
     "At Musiri Pumps, we rewrite the laws of conventional pumping. Powered purely by innovative mechanics with zero external fuel or electricity, Musiri Pumps brings perpetual water flow to agricultural, industrial, and residential communities worldwide.",
-  email: "placeholder@example.com",
-  phone: "[Phone number to be added]",
-  addressLines: [
-    "[Street address to be added]",
-    "[City, region, and postcode to be added]",
-    "[Country to be added]",
-  ],
-  hours: "[Business hours to be added]",
+  email: "contact@musiripumps.com",
+  phone: "+91 8248913142",
+  addressLines: ["22, J Nagar, Kallupatti - 639107"],
   notice:
     "Content marked as a placeholder is not official company information. Replace it before publishing.",
 } as const;

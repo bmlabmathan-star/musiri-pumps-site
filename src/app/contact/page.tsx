@@ -30,17 +30,16 @@ export default function ContactPage() {
           </div>
         </div>
         <aside className="h-fit rounded-lg border border-navy/10 bg-white p-6">
-          <h2 className="font-serif text-2xl text-navy">Contact placeholders</h2>
+          <h2 className="font-serif text-2xl text-navy">Contact details</h2>
           <ul className="mt-4 space-y-2 text-sm leading-6 text-steel">
             <li>Email: {site.email}</li>
             <li>Phone: {site.phone}</li>
             {site.addressLines.map((line) => (
               <li key={line}>{line}</li>
             ))}
-            <li>Hours: {site.hours}</li>
           </ul>
           <p className="mt-4 text-sm text-steel">
-            Replace these values in src/data/site.ts when official contact details are ready.
+            For enquiries, contact us by email or phone.
           </p>
         </aside>
       </Container>

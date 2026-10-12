@@ -27,7 +27,7 @@ export function Footer() {
         </div>
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-water">
-            Contact placeholders
+            Contact
           </p>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li>{site.email}</li>
@@ -35,7 +35,6 @@ export function Footer() {
             {site.addressLines.map((line) => (
               <li key={line}>{line}</li>
             ))}
-            <li>{site.hours}</li>
           </ul>
         </div>
       </Container>
