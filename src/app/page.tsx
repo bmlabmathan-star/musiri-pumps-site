@@ -13,6 +13,9 @@ export default function Home() {
           <div>
             <h1 className="font-serif text-4xl leading-tight sm:text-5xl">{site.name}</h1>
             <p className="mt-1 max-w-xl text-base leading-7 text-white/80">{site.tagline}</p>
+            <p className="mt-4 max-w-xl text-base leading-7 text-white/70">
+              {site.shortDescription}
+            </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/products">View products</ButtonLink>
               <ButtonLink href="/contact" variant="ghost">

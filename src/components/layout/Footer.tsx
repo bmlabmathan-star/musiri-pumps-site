@@ -9,7 +9,6 @@ export function Footer() {
       <Container className="grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <p className="font-serif text-2xl">{site.name}</p>
-          <p className="mt-3 max-w-sm text-sm leading-6 text-white/70">{site.shortDescription}</p>
         </div>
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-water">Explore</p>
