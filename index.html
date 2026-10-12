@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Musiri Pumps | Water pump manufacturer</title>
+<meta name="description" content="Explore Musiri Pumps water pump ranges for agriculture, homes, buildings and industry. Find a pump for your water source and application.">
+<meta name="theme-color" content="#0B3340">
+<meta property="og:title" content="Musiri Pumps | Water pump solutions">
+<meta property="og:description" content="Explore pump ranges for farms, homes, buildings and industry.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --casing:#0B3340;      /* deep pump-casing teal */
+    --casing-2:#114756;
+    --water:#1F8EA3;       /* clear water */
+    --water-lt:#BFE3E9;
+    --mist:#EAF1F1;        /* cool cast-iron grey */
+    --brass:#C98A2B;       /* machined brass accent */
+    --ink:#15262B;
+    --muted:#4C6168;
+    --line:#CBD9DB;
+    --white:#fff;
+    --head:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+    --body:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:84px}
+  body{margin:0;font-family:var(--body);color:var(--ink);background:var(--white);line-height:1.6;font-size:17px}
+  img,svg{max-width:100%}
+  a{color:inherit}
+  h1,h2,h3{font-family:var(--head);line-height:1.05;margin:0;font-weight:600;letter-spacing:.005em}
+  h2{font-size:clamp(2rem,4vw,3rem);color:var(--casing)}
+  h3{font-size:1.5rem}
+  p{margin:0}
+  :focus-visible{outline:3px solid var(--brass);outline-offset:3px;border-radius:2px}
+  .wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+  .sec{padding:84px 0}
+  .sec-head{max-width:640px;margin-bottom:40px}
+  .sec-head p{color:var(--muted);margin-top:12px}
+  .btn{display:inline-block;font:600 1rem var(--body);padding:14px 26px;border-radius:4px;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn-brass{background:var(--brass);color:#1a1205}
+  .btn-brass:hover{background:#dba043}
+  .btn-line{border-color:var(--water-lt);color:var(--white)}
+  .btn-line:hover{background:rgba(255,255,255,.1)}
+  .btn-dark{background:var(--casing);color:var(--white)}
+  .btn-dark:hover{background:var(--casing-2)}
+
+  /* utility bar */
+  .util{background:var(--casing);color:var(--water-lt);font-size:.88rem}
+  .util .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:8px 0}
+  .util a{text-decoration:none;margin-left:18px}
+  .util a:first-child{margin-left:0}
+  .util a:hover{color:#fff;text-decoration:underline}
+
+  /* header */
+  header.site{position:sticky;top:0;z-index:50;background:var(--white);border-bottom:1px solid var(--line)}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:72px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .brand svg{width:38px;height:38px}
+  .brand b{font:700 1.7rem/1 var(--head);color:var(--casing);letter-spacing:.01em}
+  .brand small{display:block;font:500 .72rem/1.2 var(--body);color:var(--muted);letter-spacing:.04em}
+  nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px}
+  nav li{position:relative}
+  nav a.top,nav button.top{display:block;padding:24px 14px;font:600 .98rem var(--body);text-decoration:none;color:var(--ink);background:none;border:0;cursor:pointer}
+  nav a.top:hover,nav button.top:hover,nav li:focus-within>.top{color:var(--water)}
+  .drop{display:none;position:absolute;left:0;top:100%;min-width:250px;background:var(--white);border:1px solid var(--line);border-top:3px solid var(--brass);box-shadow:0 12px 24px rgba(11,51,64,.12);padding:8px 0}
+  nav li:hover>.drop,nav li:focus-within>.drop{display:block}
+  .drop a{display:block;padding:9px 20px;text-decoration:none;font-size:.95rem}
+  .drop a:hover{background:var(--mist);color:var(--casing)}
+  .menu-btn{display:none;background:none;border:2px solid var(--casing);color:var(--casing);padding:8px 14px;border-radius:4px;font:600 .95rem var(--body);cursor:pointer}
+
+  /* hero */
+  .hero{background:var(--casing);color:var(--white);position:relative;overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:72px 0 150px}
+  .hero h1{font-size:clamp(2.8rem,6.4vw,5.4rem);font-weight:700;max-width:12ch}
+  .hero p.lead{margin-top:22px;max-width:50ch;color:#cfe5e9;font-size:1.12rem}
+  .hero .cta{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+
+  /* finder */
+  .finder-wrap{margin-top:-96px;position:relative;z-index:5}
+  .finder{background:var(--white);border-radius:6px;box-shadow:0 18px 40px rgba(11,51,64,.18);padding:30px 32px;border-top:5px solid var(--brass)}
+  .finder h2{font-size:1.9rem}
+  .finder form{display:grid;grid-template-columns:1fr 1fr auto;gap:16px;margin-top:18px;align-items:end}
+  label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px}
+  select,input,textarea{width:100%;font:inherit;padding:12px 12px;border:1.5px solid #9db3b8;border-radius:4px;background:#fff;color:var(--ink)}
+  textarea{min-height:120px;resize:vertical}
+  #finder-result{margin-top:20px;padding:16px 18px;background:var(--mist);border-left:4px solid var(--water);display:none}
+  #finder-result a{color:var(--casing);font-weight:600}
+
+  /* applications */
+  .apps{display:grid;grid-template-columns:300px 1fr;gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+  .tabs{background:var(--mist);display:flex;flex-direction:column}
+  .tabs button{text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:16px 22px;font:600 1rem var(--body);cursor:pointer;color:var(--ink);display:flex;gap:12px;align-items:center}
+  .tabs button svg{width:24px;height:24px;flex:none;stroke:var(--water);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .tabs button[aria-selected="true"]{background:var(--casing);color:#fff}
+  .tabs button[aria-selected="true"] svg{stroke:var(--brass)}
+  .tabs button:hover:not([aria-selected="true"]){background:#dde9ea}
+  .panel{padding:40px 44px}
+  .panel h3{font-size:2.2rem;color:var(--casing)}
+  .panel p{margin-top:14px;max-width:56ch;color:var(--muted)}
+  .panel ul{margin:22px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+  .panel li a{display:inline-block;padding:8px 14px;border:1.5px solid var(--water);border-radius:999px;text-decoration:none;font-weight:600;font-size:.92rem;color:var(--casing)}
+  .panel li a:hover{background:var(--water);color:#fff}
+
+  /* products */
+  .products{background:var(--mist)}
+  .prow{display:grid;grid-template-columns:90px 1fr 1.3fr auto;gap:24px;align-items:center;padding:24px 0;border-top:1px solid #b5c8cb}
+  .prow:last-child{border-bottom:1px solid #b5c8cb}
+  .prow svg{width:72px;height:72px}
+  .prow h3{color:var(--casing)}
+  .prow p{color:var(--muted);font-size:.98rem}
+  .prow a.more{font-weight:600;text-decoration:none;color:var(--casing);border-bottom:2px solid var(--brass);padding-bottom:2px;white-space:nowrap}
+  .prow a.more:hover{color:var(--water)}
+
+  /* why */
+  .why{background:var(--casing);color:#fff}
+  .why h2{color:#fff}
+  .why .sec-head p{color:#cfe5e9}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+  .points{list-style:none;margin:0;padding:0}
+  .points li{padding:20px 0;border-top:1px solid #2c6071}
+  .points li:last-child{border-bottom:1px solid #2c6071}
+  .points h3{color:#fff;margin-bottom:6px}
+  .points p{color:#cfe5e9}
+
+  /* contact */
+  .contact{background:var(--mist)}
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px}
+  .contact dl{margin:28px 0 0}
+  .contact dt{font-weight:600;margin-top:18px}
+  .contact dd{margin:2px 0 0;color:var(--muted)}
+  .contact dd a{color:var(--casing)}
+  .enq{background:#fff;padding:32px;border-radius:6px;border-top:5px solid var(--brass);box-shadow:0 10px 30px rgba(11,51,64,.1)}
+  .enq .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .enq .field{margin-bottom:16px}
+  #enq-note{margin-top:12px;color:var(--muted);font-size:.9rem}
+
+  /* footer */
+  footer{background:#071f27;color:#b7d0d5;padding:56px 0 28px;font-size:.95rem}
+  .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+  footer h3{color:#fff;font-size:1.25rem;margin-bottom:12px}
+  footer ul{list-style:none;margin:0;padding:0}
+  footer li{margin:6px 0}
+  footer a{text-decoration:none}
+  footer a:hover{color:#fff;text-decoration:underline}
+  .legal{border-top:1px solid #1c424d;margin-top:40px;padding-top:20px;font-size:.85rem}
+
+  @media (max-width:960px){
+    .menu-btn{display:block}
+    nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);max-height:75vh;overflow:auto}
+    nav.open{display:block}
+    nav ul{flex-direction:column;padding:8px 20px 16px}
+    nav a.top,nav button.top{padding:12px 4px;width:100%;text-align:left}
+    .drop{display:block;position:static;border:0;box-shadow:none;padding:0 0 6px 14px;min-width:0}
+    .hero .wrap{grid-template-columns:1fr;padding:48px 0 130px}
+    .finder form{grid-template-columns:1fr}
+    .apps{grid-template-columns:1fr}
+    .tabs{flex-direction:row;overflow-x:auto}
+    .tabs button{border-bottom:0;border-right:1px solid var(--line);white-space:nowrap}
+    .panel{padding:28px 22px}
+    .prow{grid-template-columns:64px 1fr;gap:6px 16px}
+    .prow svg{width:56px;height:56px;grid-row:span 2}
+    .prow p,.prow a.more{grid-column:2}
+    .why-grid,.contact-grid,.foot{grid-template-columns:1fr}
+    .sec{padding:60px 0}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+  }
+
+  /* engineering visual system */
+  :root{--casing:#132c39;--casing-2:#1c4353;--water:#277b8a;--water-lt:#b9d8dc;--mist:#eef2f2;--brass:#ef6b3a;--ink:#172832;--muted:#586971;--line:#ccd5d8;--white:#fff;--head:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+  body{background:#f6f7f5;color:var(--ink);font-size:16px}
+  .util{background:#142b36;color:#d0e0e3;text-transform:uppercase;font:600 .72rem/1.4 var(--body);letter-spacing:.12em;border-bottom:3px solid var(--brass)}
+  .util a{color:#fff}
+  header.site{background:#fbfcfa}
+  header.site .wrap{min-height:78px}
+  .brand svg{background:var(--casing);padding:4px;border:1px solid #6f8d97}
+  .brand small{text-transform:uppercase;letter-spacing:.14em;font-size:.62rem;margin-top:4px}
+  nav a.top,nav button.top{font-size:.88rem;text-transform:uppercase;letter-spacing:.08em}
+  .drop{border-top-color:var(--brass);border-radius:0}
+  .hero{color:var(--ink);background-color:#edf2f1;background-image:linear-gradient(rgba(26,73,86,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(26,73,86,.055) 1px,transparent 1px);background-size:32px 32px}
+  .hero .wrap{grid-template-columns:1fr 1fr;gap:54px;padding:76px 0 142px}
+  .hero h1{color:var(--casing);font-size:clamp(3.4rem,6vw,5.6rem);max-width:10ch;letter-spacing:-.015em}
+  .hero p.lead{color:#50646d;max-width:44ch;font-size:1.06rem}
+  .eyebrow{font:700 .72rem/1.5 var(--body);text-transform:uppercase;letter-spacing:.15em;color:var(--water);margin-bottom:14px}
+  .hero .cta{gap:10px}
+  .btn{border-radius:2px;text-transform:uppercase;letter-spacing:.06em;font-size:.82rem;padding:14px 20px}
+  .btn-brass{background:var(--brass);color:#1e2425}
+  .btn-line{border-color:var(--casing);color:var(--casing)}
+  .btn-line:hover{background:var(--casing);color:#fff}
+  .hero-visual{position:relative;padding:18px 22px 14px;background:var(--casing);border:1px solid #365763;box-shadow:12px 12px 0 rgba(19,44,57,.12);background-image:linear-gradient(rgba(185,216,220,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(185,216,220,.06) 1px,transparent 1px);background-size:20px 20px}
+  .visual-header,.visual-foot{display:flex;justify-content:space-between;gap:14px;color:#b8d1d6;font:600 .64rem/1.4 var(--body);letter-spacing:.13em;text-transform:uppercase}
+  .visual-header{border-bottom:1px solid #456572;padding-bottom:10px}
+  .visual-foot{border-top:1px solid #456572;padding-top:10px}
+  .finder-wrap{margin-top:-84px}
+  .finder{border:1px solid var(--line);border-top:4px solid var(--brass);border-radius:2px;box-shadow:0 14px 30px rgba(19,44,57,.11);padding:28px 32px}
+  .finder h2{font-size:2.1rem}
+  select,input,textarea{border:1px solid #a9b8bc;border-radius:2px;font-size:.95rem}
+  .sec{padding:82px 0}
+  .sec-head{max-width:720px}
+  .sec-head h2,.contact h2{font-size:clamp(2.5rem,4.4vw,3.8rem);letter-spacing:-.01em}
+  .sec-head .eyebrow{margin-bottom:10px}
+  .apps{grid-template-columns:270px 1fr;border-radius:2px;border-color:#bcc9cc;box-shadow:0 8px 24px rgba(19,44,57,.06)}
+  .tabs{background:#e5ebeb}
+  .tabs button{text-transform:uppercase;letter-spacing:.035em;font-size:.83rem;padding:17px 18px;border-color:#cad3d4}
+  .tabs button[aria-selected="true"]{background:var(--casing)}
+  .panel{min-height:280px;background:#fbfcfa}
+  .panel h3{font-size:2.5rem}
+  .panel li a{border-radius:2px;border-color:#9eb7bc;font-size:.8rem;text-transform:uppercase;letter-spacing:.02em}
+  .products{background:#e9eeee;border-top:1px solid #d2dada;border-bottom:1px solid #d2dada}
+  .product-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .prow{position:relative;min-height:186px;grid-template-columns:68px 1fr;grid-template-rows:auto 1fr auto;gap:8px 18px;align-items:start;padding:24px;background:#fbfcfa;border:1px solid #cbd5d7;border-top:3px solid var(--casing);transition:transform .18s ease,box-shadow .18s ease}
+  .prow:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(19,44,57,.1)}
+  .prow:last-child{border-bottom:1px solid #cbd5d7}
+  .prow svg{width:60px;height:60px;grid-row:1 / span 3;padding:4px;background:#e8eeee;border:1px solid #d5dede}
+  .prow h3{font-size:1.5rem;line-height:1.08}
+  .prow p{grid-column:2;color:#596970;font-size:.9rem;line-height:1.55}
+  .prow a.more{grid-column:2;justify-self:start;font-size:.73rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--brass);white-space:normal}
+  .why{background:#142b36;border-top:4px solid var(--brass)}
+  .why-grid{grid-template-columns:.95fr 1.05fr;gap:68px}
+  .why .eyebrow{color:#8dc3cb}
+  .why h2{font-size:clamp(2.7rem,4.5vw,4rem);max-width:11ch}
+  .points{counter-reset:selection}
+  .points li{counter-increment:selection;position:relative;padding:22px 0 22px 60px}
+  .points li:before{content:"0" counter(selection);position:absolute;left:0;top:20px;color:var(--brass);font:700 1.3rem/1 var(--head);letter-spacing:.08em}
+  .points h3{text-transform:uppercase;font-size:1.35rem;letter-spacing:.025em}
+  .contact{background:#f0f3f2}
+  .contact-grid{align-items:start}
+  .enq{border-radius:2px;border:1px solid #ccd5d8;border-top:4px solid var(--brass);box-shadow:0 12px 26px rgba(19,44,57,.08)}
+  .enq label{text-transform:uppercase;letter-spacing:.06em;font-size:.75rem}
+  .btn-dark{border-radius:2px}
+  footer{background:#10232d;border-top:4px solid var(--brass)}
+  footer h3{text-transform:uppercase;letter-spacing:.1em;font-size:1rem}
+  .legal{border-color:#29424d}
+  @media(max-width:960px){
+    .hero .wrap{grid-template-columns:1fr;padding:54px 0 120px}
+    .hero-visual{max-width:540px;width:100%;margin:0 auto;order:-1}
+    .product-list{grid-template-columns:1fr}
+    .why-grid{grid-template-columns:1fr;gap:24px}
+    .why h2{max-width:15ch}
+  }
+  @media(max-width:600px){
+    .util .wrap{font-size:.62rem;letter-spacing:.08em}
+    .hero h1{font-size:clamp(3rem,13vw,4rem)}
+    .hero-visual{padding:12px}
+    .visual-header,.visual-foot{font-size:.55rem}
+    .finder{padding:24px 20px}
+    .prow{padding:18px;grid-template-columns:54px 1fr;gap:8px 14px}
+    .prow svg{width:50px;height:50px}
+    .sec{padding:62px 0}
+    .enq{padding:24px 20px}
+    .enq .row{grid-template-columns:1fr;gap:0}
+  }
+  /* flowing-water background and static hydraulic schematic */
+  body{background-color:#f6f7f5;background-image:radial-gradient(ellipse at 4% 18%,transparent 0 84px,rgba(39,123,138,.085) 85px 86px,transparent 87px 126px,rgba(39,123,138,.06) 127px 128px,transparent 129px 170px),radial-gradient(ellipse at 96% 68%,transparent 0 110px,rgba(39,123,138,.065) 111px 112px,transparent 113px 164px,rgba(39,123,138,.045) 165px 166px,transparent 167px 220px),linear-gradient(rgba(39,123,138,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(39,123,138,.018) 1px,transparent 1px);background-size:100% 100%,100% 100%,36px 36px,36px 36px;background-attachment:fixed}
+  .hero{background-color:rgba(237,242,241,.91);background-image:linear-gradient(rgba(26,73,86,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(26,73,86,.045) 1px,transparent 1px),radial-gradient(ellipse at 8% 78%,transparent 0 110px,rgba(39,123,138,.09) 111px 112px,transparent 113px 160px,rgba(39,123,138,.06) 161px 162px,transparent 163px 215px);background-size:32px 32px,32px 32px,420px 320px;background-position:0 0,0 0,left bottom;background-repeat:repeat,repeat,no-repeat}
+  .hero-visual{overflow:hidden}
+  .flow-schematic{display:block;width:100%;height:auto;max-width:680px;margin:12px auto 10px}
+  .products{background-color:rgba(233,238,238,.91);background-image:radial-gradient(ellipse at 100% 0,transparent 0 115px,rgba(39,123,138,.06) 116px 117px,transparent 118px 170px,rgba(39,123,138,.04) 171px 172px,transparent 173px 225px);background-repeat:no-repeat;background-size:420px 330px;background-position:right top}
+  .contact{background-color:rgba(240,243,242,.92);background-image:radial-gradient(ellipse at 0 100%,transparent 0 110px,rgba(39,123,138,.07) 111px 112px,transparent 113px 170px,rgba(39,123,138,.045) 171px 172px,transparent 173px 230px);background-repeat:no-repeat;background-size:420px 330px;background-position:left bottom}
+  .why{background-image:radial-gradient(ellipse at 100% 10%,transparent 0 120px,rgba(117,212,223,.09) 121px 122px,transparent 123px 185px,rgba(117,212,223,.055) 186px 187px,transparent 188px 250px);background-repeat:no-repeat;background-size:480px 360px;background-position:right top}
+  .visual-header{color:#cde2e5}
+  @media(max-width:600px){.visual-header,.visual-foot{position:relative;z-index:1;background:#132c39}}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <span>Water pump solutions for farms, homes and businesses</span>
+    <span><a href="#products">Explore pump ranges</a><a href="#contact">Contact us</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Musiri Pumps home">
+      <svg viewBox="-50 -50 100 100" aria-hidden="true">
+        <circle r="46" fill="#0B3340"/>
+        <g fill="none" stroke="#BFE3E9" stroke-width="5" stroke-linecap="round">
+          <path id="b" d="M0 -8 C 6 -18 20 -24 32 -20"/>
+          <use href="#b" transform="rotate(60)"/><use href="#b" transform="rotate(120)"/>
+          <use href="#b" transform="rotate(180)"/><use href="#b" transform="rotate(240)"/>
+          <use href="#b" transform="rotate(300)"/>
+        </g>
+        <circle r="8" fill="#C98A2B"/>
+      </svg>
+      <span><b>Musiri Pumps</b><small>Water pump manufacturers</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav" aria-label="Main">
+      <ul>
+        <li><a class="top" href="#top">Home</a></li>
+        <li><a class="top" href="#why">About us</a></li>
+        <li>
+          <button class="top" type="button">Applications</button>
+          <div class="drop">
+            <a href="#applications" data-app="0">Agriculture</a>
+            <a href="#applications" data-app="1">Homes</a>
+            <a href="#applications" data-app="2">Commercial buildings</a>
+            <a href="#applications" data-app="3">Industry</a>
+            <a href="#applications" data-app="4">Dewatering and drainage</a>
+            <a href="#applications" data-app="5">Solar pumping</a>
+          </div>
+        </li>
+        <li>
+          <button class="top" type="button">Products</button>
+          <div class="drop">
+            <a href="#products">Borewell submersible pumps</a>
+            <a href="#products">Openwell submersible pumps</a>
+            <a href="#products">Monoblock pumps</a>
+            <a href="#products">Pressure booster systems</a>
+            <a href="#products">Sewage and drainage pumps</a>
+            <a href="#products">Solar pumps</a>
+          </div>
+        </li>
+        <li><a class="top" href="#contact">Support</a></li>
+          <li><a class="top" href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" aria-label="Introduction">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">PUMP SYSTEMS / APPLICATION ENGINEERING</p>
+      <h1>Use water flow to move more water.</h1>
+      <p class="lead">Water flow and gravity supply the driving force, so an electrical connection is not required. Explore the flow path and share your site conditions with our team.</p>
+      <div class="cta">
+        <a class="btn btn-brass" href="#finder">Find a pump</a>
+        <a class="btn btn-line" href="#contact">Request a quote</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="visual-header"><span>FIG. 01 / FLOW-DRIVEN PUMPING</span><span>SCHEMATIC</span></div>
+      <svg class="flow-schematic" viewBox="0 0 720 430" role="img" aria-label="Schematic showing elevated source water flowing through a pump and up to a delivery tank">
+        <defs>
+          <pattern id="fine-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#b9d8dc" stroke-opacity=".08" stroke-width="1"/></pattern>
+          <marker id="flow-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#75d4df"/></marker>
+          <marker id="lift-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#ef6b3a"/></marker>
+        </defs>
+        <rect width="720" height="430" fill="url(#fine-grid)"/>
+        <g fill="none" stroke="#8aaab2" stroke-width="2" opacity=".65">
+          <path d="M20 192H700" stroke-dasharray="5 7"/>
+          <path d="M20 382H700"/>
+          <path d="M35 75h166v102H35z"/>
+          <path d="M35 119h166" stroke="#75d4df" stroke-width="5"/>
+          <path d="M528 52h150v92H528z"/>
+          <path d="M528 102h150" stroke="#75d4df" stroke-width="5"/>
+        </g>
+        <path d="M38 122c15-8 28 8 42 0s28 8 42 0 28 8 42 0 23 4 33 0v52H38z" fill="#277b8a" fill-opacity=".28"/>
+        <path d="M531 105c14-8 27 8 41 0s27 8 41 0 27 8 41 0 15 5 21 2v34H531z" fill="#277b8a" fill-opacity=".28"/>
+        <g fill="#b9d8dc" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">
+          <text x="37" y="57">01 / SOURCE RESERVOIR</text>
+          <text x="530" y="33">03 / DELIVERY</text>
+          <text x="267" y="348">02 / FLOW-DRIVEN PUMP</text>
+        </g>
+        <path d="M201 148h26v175h67" fill="none" stroke="#75d4df" stroke-width="12" stroke-linejoin="round"/>
+        <path d="M210 150v84m0 27v46" fill="none" stroke="#c5f3f5" stroke-width="3" marker-end="url(#flow-arrow)"/>
+        <rect x="289" y="292" width="165" height="82" rx="3" fill="#173b49" stroke="#75d4df" stroke-width="3"/>
+        <path d="M307 312h129M307 354h129" stroke="#5c8792" stroke-width="2"/>
+        <path d="M321 333h101" stroke="#c5f3f5" stroke-width="3" marker-end="url(#flow-arrow)"/>
+        <path d="M454 333h104V104" fill="none" stroke="#ef6b3a" stroke-width="12" stroke-linejoin="round"/>
+        <path d="M474 333h62V126" fill="none" stroke="#ffe0d3" stroke-width="3" marker-end="url(#lift-arrow)"/>
+        <path d="M185 169h-18m392 22h-28" stroke="#b9d8dc" stroke-width="1.5"/>
+        <text x="47" y="212" fill="#8aaab2" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5">DRIVE FLOW</text>
+        <text x="567" y="214" fill="#8aaab2" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5">LIFTED FLOW</text>
+        <path d="M25 382h670" stroke="#476976" stroke-width="2"/>
+      </svg>
+      <div class="visual-foot"><span>WATER FLOW = DRIVE INPUT</span><span>NO ELECTRICITY REQUIRED</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PUMP FINDER -->
+<div class="wrap finder-wrap" id="finder">
+  <div class="finder">
+    <p class="eyebrow">SYSTEM SELECTOR / 01</p>
+    <h2>Start with the application</h2>
+    <form id="finderForm">
+      <div>
+        <label for="source">01 / Water source</label>
+        <select id="source" required>
+          <option value="">Choose a source</option>
+          <option value="bore">Borewell</option>
+          <option value="open">Open well, pond or canal</option>
+          <option value="tank">Sump or storage tank</option>
+          <option value="drain">Drain, pit or sewage line</option>
+          <option value="solar">Sunlight (solar powered)</option>
+        </select>
+      </div>
+      <div>
+        <label for="use">02 / Duty application</label>
+        <select id="use" required>
+          <option value="">Choose a use</option>
+          <option>Farm irrigation</option>
+          <option>Home water supply</option>
+          <option>Apartment or commercial building</option>
+          <option>Factory or industrial process</option>
+          <option>Removing water from a site</option>
+        </select>
+      </div>
+      <button class="btn btn-dark" type="submit">View pump ranges</button>
+    </form>
+    <div id="finder-result" role="status" aria-live="polite"></div>
+  </div>
+</div>
+
+<!-- APPLICATIONS -->
+<section class="sec" id="applications">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">APPLICATION MATRIX / 02</p>
+      <h2>Configure by duty</h2>
+      <p>Select an application to review the pump categories commonly used for that duty.</p>
+    </div>
+    <div class="apps">
+      <div class="tabs" role="tablist" aria-label="Applications" id="tabs"></div>
+      <div class="panel" id="panel" role="tabpanel" tabindex="0"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="sec products" id="products">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">PRODUCT CATALOG / 03</p>
+      <h2>Pump architectures</h2>
+      <p>Browse pump categories by installation and operating duty. Confirm model selection against the required flow, total head, liquid and power supply.</p>
+    </div>
+    <div class="product-list">
+      <article class="prow">
+        <svg viewBox="0 0 72 72" aria-hidden="true"><rect x="26" y="4" width="20" height="64" rx="10" fill="#0B3340"/><rect x="30" y="14" width="12" height="4" fill="#C98A2B"/><rect x="30" y="26" width="12" height="4" fill="#1F8EA3"/><rect x="30" y="38" width="12" height="4" fill="#1F8EA3"/></svg>
+        <h3>Borewell submersible pumps</h3>
+        <p>Submersible pump category for borewell water supply and irrigation applications.</p>
+        <a class="more" href="#contact">Enquire about this range</a>
+      </article>
+      <article class="prow">
+        <svg viewBox="0 0 72 72" aria-hidden="true"><rect x="10" y="22" width="52" height="28" rx="14" fill="#0B3340"/><circle cx="24" cy="36" r="8" fill="#C98A2B"/><rect x="40" y="31" width="14" height="10" fill="#1F8EA3"/></svg>
+        <h3>Openwell submersible pumps</h3>
+        <p>Submersible pump category for open wells and other accessible water sources.</p>
+        <a class="more" href="#contact">Enquire about this range</a>
+      </article>
+      <article class="prow">
+        <svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="30" cy="40" r="22" fill="#0B3340"/><circle cx="30" cy="40" r="9" fill="#C98A2B"/><rect x="48" y="14" width="18" height="12" fill="#1F8EA3"/></svg>
+        <h3>Monoblock and centrifugal pumps</h3>
+        <p>Surface-mounted pump category for water transfer and general supply duties.</p>
+        <a class="more" href="#contact">Enquire about this range</a>
+      </article>
+      <article class="prow">
+        <svg viewBox="0 0 72 72" aria-hidden="true"><rect x="8" y="30" width="56" height="16" rx="3" fill="#0B3340"/><circle cx="22" cy="38" r="6" fill="#C98A2B"/><circle cx="50" cy="38" r="6" fill="#C98A2B"/><rect x="32" y="12" width="8" height="18" fill="#1F8EA3"/></svg>
+        <h3>Pressure booster systems</h3>
+        <p>System category for applications that require increased water pressure.</p>
+        <a class="more" href="#contact">Enquire about this range</a>
+      </article>
+      <article class="prow">
+        <svg viewBox="0 0 72 72" aria-hidden="true"><path d="M12 24h48v8H12z" fill="#1F8EA3"/><rect x="22" y="32" width="28" height="28" rx="8" fill="#0B3340"/><circle cx="36" cy="46" r="6" fill="#C98A2B"/></svg>
+        <h3>Sewage and drainage pumps</h3>
+        <p>Pump category for drainage and wastewater duties; confirm liquid and solids conditions.</p>
+        <a class="more" href="#contact">Enquire about this range</a>
+      </article>
+      <article class="prow">
+        <svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="22" r="10" fill="#C98A2B"/><path d="M14 66l8-26h28l8 26z" fill="#0B3340"/><path d="M26 52h20M24 59h24" stroke="#1F8EA3" stroke-width="2"/></svg>
+        <h3>Solar pumps</h3>
+        <p>Pump systems paired with solar power for suitable water supply applications.</p>
+        <a class="more" href="#contact">Enquire about this range</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="sec why" id="why">
+  <div class="wrap why-grid">
+    <div>
+      <div class="sec-head">
+        <p class="eyebrow">SELECTION WORKFLOW / 04</p>
+        <h2>Define the duty point before selecting a pump.</h2>
+        <p>A reliable selection starts with the operating conditions. Gather these inputs before comparing models.</p>
+      </div>
+    </div>
+    <ul class="points">
+      <li><h3>Source &amp; liquid</h3><p>Identify the source, liquid condition and any solids the pump must handle.</p></li>
+      <li><h3>Flow &amp; total head</h3><p>Estimate the required flow and total delivery head, including elevation and pipe losses.</p></li>
+      <li><h3>Power &amp; installation</h3><p>Confirm available supply, installation conditions and duty cycle before choosing a model.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">TECHNICAL ENQUIRY / 05</p>
+      <h2>Send the operating conditions.</h2>
+      <p style="margin-top:12px;color:var(--muted);max-width:46ch">Ask for a product recommendation or send an enquiry about service and dealership opportunities.</p>
+      <dl>
+        <dt>Email</dt><dd><a href="mailto:sales@musiripumps.com">sales@musiripumps.com</a></dd>
+      </dl>
+    </div>
+
+    <form class="enq" id="enqForm">
+      <div class="row">
+        <div class="field"><label for="name">Your name</label><input id="name" required autocomplete="name"></div>
+        <div class="field"><label for="phone">Phone number</label><input id="phone" type="tel" required autocomplete="tel"></div>
+      </div>
+      <div class="field">
+        <label for="type">What do you need?</label>
+        <select id="type">
+          <option>Product enquiry</option>
+          <option>Service request</option>
+          <option>Dealership</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field"><label for="msg">Message</label><textarea id="msg" placeholder="Tell us the pump type, depth or distance, and your location."></textarea></div>
+      <button class="btn btn-dark" type="submit">Send enquiry</button>
+      <p id="enq-note">Submitting opens your email app with your enquiry addressed to sales@musiripumps.com.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h3>Musiri Pumps</h3>
+        <p>Water pump solutions for farms, homes, buildings and industry.</p>
+      </div>
+      <div>
+        <h3>Applications</h3>
+        <ul>
+          <li><a href="#applications" data-app="0">Agriculture</a></li>
+          <li><a href="#applications" data-app="1">Homes</a></li>
+          <li><a href="#applications" data-app="2">Commercial buildings</a></li>
+          <li><a href="#applications" data-app="3">Industry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Useful links</h3>
+        <ul>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Service centres</a></li>
+          <li><a href="#contact">Dealer locator</a></li>
+          <li><a href="#contact">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">&copy; <span id="yr">2026</span> Musiri Pumps. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* mobile menu */
+  var btn=document.getElementById('menuBtn'), nav=document.getElementById('mainNav');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open);
+  });
+  nav.addEventListener('click',function(e){ if(e.target.tagName==='A'){ nav.classList.remove('open'); btn.setAttribute('aria-expanded',false);} });
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  /* applications */
+  var icon={
+    plant:'<svg viewBox="0 0 24 24"><path d="M12 21V11"/><path d="M12 11C12 7 9 5 5 5c0 4 2 6 7 6z"/><path d="M12 14c0-3 2-5 6-5 0 3-2 5-6 5z"/></svg>',
+    home:'<svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>',
+    build:'<svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg>',
+    gear:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>',
+    drop:'<svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.500 6-11 6-11z"/></svg>',
+    sun:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.900 4.900l2.100 2.100M17 17l2.100 2.100M4.900 19.100L7 17M17 7l2.100-2.100"/></svg>'
+  };
+  var apps=[
+    {n:'Agriculture',i:'plant',t:'Irrigation and farm water supply',d:'Lift water from borewells, open wells, ponds and canals to your fields. We help you match the pump to your depth, acreage and power supply.',p:['Borewell submersible pumps','Openwell submersible pumps','Solar pumps']},
+    {n:'Homes',i:'home',t:'Steady water for every tap',d:'Fill the overhead tank, keep showers at good pressure and run garden taps without a drop in flow.',p:['Monoblock pumps','Pressure booster systems','Openwell submersible pumps']},
+    {n:'Commercial buildings',i:'build',t:'Water for apartments, offices and hotels',d:'Move water to many floors and keep pressure even for every user, with pump sets sized to the building.',p:['Pressure booster systems','Monoblock pumps']},
+    {n:'Industry',i:'gear',t:'Pumping for factories and processes',d:'Reliable pumps for cooling, process water and transfer, built to run for long hours.',p:['Monoblock pumps','Pressure booster systems']},
+    {n:'Dewatering and drainage',i:'drop',t:'Clear water from pits, basements and drains',d:'Remove rain water, seepage and sewage from low-lying areas and construction sites.',p:['Sewage and drainage pumps']},
+    {n:'Solar pumping',i:'sun',t:'Pumping without a grid connection',d:'Run pumps directly from solar panels, cutting power bills and reaching fields where the grid does not.',p:['Solar pumps','Borewell submersible pumps']}
+  ];
+  var tabs=document.getElementById('tabs'), panel=document.getElementById('panel');
+  function show(k){
+    var a=apps[k];
+    [].forEach.call(tabs.children,function(b,j){ b.setAttribute('aria-selected', j===k ? 'true' : 'false'); b.tabIndex=(j===k?0:-1); });
+    panel.setAttribute('aria-labelledby','app-tab-'+k);
+    panel.innerHTML='<h3>'+a.n+'</h3><p><strong>'+a.t+'.</strong> '+a.d+'</p><ul>'+a.p.map(function(x){return '<li><a href="#products">'+x+'</a></li>';}).join('')+'</ul>';
+  }
+  apps.forEach(function(a,k){
+    var b=document.createElement('button');
+    b.type='button'; b.id='app-tab-'+k; b.setAttribute('role','tab'); b.setAttribute('aria-controls','panel'); b.setAttribute('aria-selected','false'); b.tabIndex=-1; b.innerHTML=icon[a.i]+'<span>'+a.n+'</span>';
+    b.addEventListener('click',function(){show(k)});
+    b.addEventListener('keydown',function(e){
+      var n=null;
+      if(e.key==='ArrowDown'||e.key==='ArrowRight') n=(k+1)%apps.length;
+      if(e.key==='ArrowUp'||e.key==='ArrowLeft') n=(k+apps.length-1)%apps.length;
+      if(n!==null){e.preventDefault();show(n);tabs.children[n].focus();}
+    });
+    tabs.appendChild(b);
+  });
+  show(0);
+  document.addEventListener('click',function(e){
+    var l=e.target.closest('[data-app]');
+    if(l) show(parseInt(l.getAttribute('data-app'),10));
+  });
+
+  /* pump finder */
+  var byS={
+    bore:'Borewell submersible pumps',
+    open:'Openwell submersible pumps',
+    tank:'Monoblock pumps or Pressure booster systems',
+    drain:'Sewage and drainage pumps',
+    solar:'Solar pumps'
+  };
+  document.getElementById('finderForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var s=document.getElementById('source'), u=document.getElementById('use');
+    var out=document.getElementById('finder-result');
+    out.style.display='block';
+    out.innerHTML='For <strong>'+u.value.toLowerCase()+'</strong> from a <strong>'+s.options[s.selectedIndex].text.toLowerCase()+'</strong>, start with <strong>'+byS[s.value]+'</strong>. Send us your depth, distance and daily need and we will confirm the model. <a href="#contact">Request a quote</a>';
+  });
+
+  /* enquiry form: opens the visitor's email app */
+  document.getElementById('enqForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var g=function(id){return document.getElementById(id).value;};
+    var body='Name: '+g('name')+'\nPhone: '+g('phone')+'\nType: '+g('type')+'\n\n'+g('msg');
+    window.location.href='mailto:sales@musiripumps.com?subject='+encodeURIComponent(g('type')+' from '+g('name'))+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>

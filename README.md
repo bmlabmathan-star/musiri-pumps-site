@@ -1,13 +1,13 @@
-# MusiR Pumps website
+# Musiri Pumps website
 
-This is a company website built with Next.js (App Router), TypeScript, and Tailwind CSS.
+This repository contains the current company website built with Next.js App Router, TypeScript, and Tailwind CSS. The original standalone `index.html` concept is preserved at the repository root.
 
-It is a **front-end preview**. Login, registration, enquiry sending, and admin actions are **not connected** to a database yet.
+The Next.js site is a **front-end preview**. Login, registration, enquiry sending, and admin actions are **not connected** to a database yet.
 
-## Preview the website on your computer
+## Preview the current website
 
-1. Open a terminal in this folder (`musir-pumps`).
-2. Install packages if you have not already:
+1. Open a terminal in this folder.
+2. Install packages if needed:
 
 ```bash
 npm install
@@ -21,26 +21,26 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-When you save a file, the page usually updates by itself. Press `Ctrl+C` in the terminal to stop the server.
+Keep the terminal running while previewing the site. Press `Ctrl+C` in the terminal to stop it.
 
-## What each important folder does
+## Project folders
 
-- `src/app` — the pages you visit in the browser (`/`, `/products`, `/about`, and so on).
-- `src/components` — reusable pieces such as the header, product cards, and forms.
-- `src/data` — easy-to-edit text and product lists. Change these files to update the website copy.
-- `src/lib` — form checks and a future place for Supabase (database/login) code.
+- `src/app` — website pages, including Home, Products, About Us, Contact Us, and Become a Partner.
+- `src/components` — reusable page elements such as the header, forms, product cards, and video gallery.
+- `src/data` — editable company text, navigation, product details, and video links.
+- `src/lib` — client-side form checks and future Supabase integration points.
 
-## How to edit content
+## Edit website content
 
-- Company name, email, phone, and address: `src/data/site.ts`
+- Company name and contact placeholders: `src/data/site.ts`
 - About Us text: `src/data/about.ts`
-- Products: `src/data/products.ts`
-- Applications: `src/data/applications.ts`
+- Vision, mission, and core values: `src/data/brand.ts`
+- Product catalogue: `src/data/products.ts`
+- Video gallery: `src/data/videos.ts`
+- Applications page: `src/data/applications.ts`
 
 Text marked as a placeholder is not official company information.
 
 ## Later: database and login
 
-When you are ready, copy `.env.example` to `.env.local` and add Supabase values there. Do not put secret keys in the website files.
-
-Starter files for that work are in `src/lib/supabase/`.
+When you are ready, copy `.env.example` to `.env.local` and add Supabase values there. Do not put secret keys in website files. Starter files for that work are in `src/lib/supabase/`.
