@@ -27,3 +27,19 @@ body {
   color: var(--foreground);
   font-family: var(--font-source-sans), Arial, Helvetica, sans-serif;
 }
+
+@keyframes river-current {
+  to {
+    stroke-dashoffset: -48;
+  }
+}
+
+.footer-river-flow {
+  animation: river-current 5s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-river-flow {
+    animation: none;
+  }
+}

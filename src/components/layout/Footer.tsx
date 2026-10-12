@@ -6,6 +6,47 @@ import { Container } from "@/components/ui/Container";
 export function Footer() {
   return (
     <footer className="mt-auto border-t border-navy/10 bg-navy-deep text-white">
+      <div className="overflow-hidden" aria-hidden="true">
+        <svg
+          className="block h-20 w-full sm:h-24"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+          fill="none"
+        >
+          <defs>
+            <linearGradient id="river-gradient" x1="0" y1="0" x2="1" y2="0">
+              <stop stopColor="#087987" />
+              <stop offset="0.5" stopColor="#32b8c7" />
+              <stop offset="1" stopColor="#75dce7" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M-30 77C180 12 278 122 488 70s302-60 490-8 311 41 492-14v83H-30V77Z"
+            fill="url(#river-gradient)"
+            fillOpacity=".22"
+          />
+          <path
+            d="M-30 82C180 17 278 127 488 75s302-60 490-8 311 41 492-14"
+            stroke="#75dce7"
+            strokeOpacity=".7"
+            strokeWidth="2"
+          />
+          <path
+            className="footer-river-flow"
+            d="M-20 94c100-29 155-29 255 0s155 29 255 0 155-29 255 0 155 29 255 0 155-29 255 0 155 29 255 0"
+            stroke="#b7f5f4"
+            strokeOpacity=".75"
+            strokeWidth="2"
+            strokeDasharray="9 15"
+          />
+          <path
+            d="M-30 77C180 12 278 122 488 70s302-60 490-8 311 41 492-14"
+            stroke="#32b8c7"
+            strokeOpacity=".6"
+            strokeWidth="1"
+          />
+        </svg>
+      </div>
       <Container className="grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <p className="font-serif text-2xl">{site.name}</p>
