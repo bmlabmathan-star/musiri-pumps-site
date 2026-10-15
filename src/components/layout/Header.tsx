@@ -23,12 +23,12 @@ export function Header() {
       <Container className="flex items-center justify-between gap-4 py-3">
         <Link href="/" className="flex items-center gap-3 text-white">
           <Image
-            src="/musiri-pumps-logo.jpg"
-            alt="Musiri Pumps logo"
-            width={120}
-            height={88}
+            src="/musiri-pumps-mark.jpg"
+            alt="Musiri Pumps infinity and water-drop logo"
+            width={420}
+            height={285}
             priority
-            className="h-12 w-[4.25rem] rounded bg-white object-contain sm:h-14 sm:w-20"
+            className="h-14 w-20 rounded bg-white object-contain sm:h-18 sm:w-24"
           />
           <span className="leading-tight">
             <span className="block text-sm font-semibold tracking-wide">{site.name}</span>
