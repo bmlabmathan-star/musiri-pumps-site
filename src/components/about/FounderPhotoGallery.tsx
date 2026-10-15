@@ -5,11 +5,8 @@ export function FounderPhotoGallery() {
   return (
     <section className="mt-14 overflow-hidden" aria-labelledby="founder-gallery-title">
       <div className="mb-5">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal">
+        <h2 id="founder-gallery-title" className="font-serif text-2xl text-navy sm:text-3xl">
           Moments &amp; Milestones
-        </p>
-        <h2 id="founder-gallery-title" className="mt-2 font-serif text-2xl text-navy sm:text-3xl">
-          Founder Gallery
         </h2>
       </div>
 
