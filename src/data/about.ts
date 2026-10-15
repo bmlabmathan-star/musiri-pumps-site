@@ -1,30 +1,26 @@
 /**
- * Editable About Us content.
- * Company profile content supplied for the brand narrative.
+ * Founder profile supplied by Mathan Babu Bhaskaran.
+ * Update this file to edit the About Us page content.
  */
-
-export const aboutContent = {
-  heading: "About Musiri Pumps",
-  intro:
-    "At Musiri Pumps, we rewrite the laws of conventional pumping. Powered purely by innovative mechanics with zero external fuel or electricity, Musiri Pumps brings perpetual water flow to agricultural, industrial, and residential communities worldwide.",
-  sections: [
-    {
-      title: "Who we are",
-      body: "Placeholder. Add the official description of the business, what it supplies, and who it serves.",
-    },
-    {
-      title: "What we offer",
-      body: "Placeholder. List the real product ranges and services. Until then, this site shows sample product cards only.",
-    },
-    {
-      title: "Where we operate",
-      body: "Placeholder. Add service areas, branches, or markets when they are confirmed. Do not invent coverage claims.",
-    },
-    {
-      title: "How to reach us",
-      body: "Placeholder. Point visitors to the Contact Us page. Add official phone, email, and address details in src/data/site.ts.",
-    },
+export const founderProfile = {
+  name: "Mathan Babu Bhaskaran",
+  roles: "Founder | Researcher | Inventor | Entrepreneur",
+  photo: "/founder-mathan-babu.jpeg",
+  introduction:
+    "I am Mathan Babu Bhaskaran, a researcher, inventor, and entrepreneur with a long-standing passion for understanding the fundamental principles of physics and transforming scientific ideas into practical engineering solutions.",
+  paragraphs: [
+    "I am the founder of BMLab, the research and innovation venture behind my entrepreneurial journey, and the driving force behind Musiri Pumps, a new venture dedicated to pump manufacturing and engineering innovation.",
+    "My research focuses on the fundamental nature of energy, matter, and the interactions that govern physical systems. Through years of independent research, I have developed the Bhaskara Law of Energy, a scientific principle that I propose as a framework for understanding energy creation and destruction through changes in matter and its associated physical properties. My work explores the relationship between fundamental forces, physical interactions, and energy transformation.",
+    "My research papers are available through academic research platforms, including ResearchGate and Google Scholar, where readers can explore my scientific work and research contributions.",
   ],
-  notIncluded:
-    "This page does not include company history, certifications, awards, or customer stories because those details have not been provided.",
-};
+  bookTitle: "Physics For Perpetual",
+  bookUrl:
+    "https://www.amazon.in/Physics-Perpetual-Groundbreaking-Destruction-Perspectives/dp/9334450355",
+  visionHeading: "My Vision for Musiri Pumps",
+  visionParagraphs: [
+    "With Musiri Pumps, my vision is to build a pump manufacturing venture that combines engineering expertise, research-driven thinking, and a commitment to practical industrial solutions. I believe that manufacturing should continuously evolve through innovation, improved engineering, reliability, and a deeper understanding of the science behind machines.",
+    "My long-term goal is to bridge the gap between scientific research and industrial applications, developing technologies that serve real-world needs while encouraging a culture of innovation and responsible resource utilization.",
+  ],
+  closing:
+    "At Musiri Pumps, we believe that engineering progress begins with scientific curiosity and grows through innovation.",
+} as const;
