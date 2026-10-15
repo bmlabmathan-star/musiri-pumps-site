@@ -32,20 +32,20 @@ export default function AboutPage() {
                 className="object-cover object-[center_18%]"
               />
             </div>
-            <div className="mt-5 text-center lg:text-left">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-water">
-                Founder
-              </p>
-              <h2 className="mt-2 font-serif text-2xl text-navy">
-                {founderProfile.name}
-              </h2>
-              <p className="mt-2 text-sm leading-6 text-steel">
-                {founderProfile.roles}
-              </p>
-            </div>
           </aside>
 
           <article className="space-y-6 text-base leading-8 text-steel">
+            <header className="border-b border-navy/10 pb-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-water">
+                Founder Profile
+              </p>
+              <h2 className="mt-2 font-serif text-3xl leading-tight text-navy sm:text-4xl">
+                {founderProfile.name}
+              </h2>
+              <p className="mt-2 text-sm font-medium leading-6 text-steel sm:text-base">
+                {founderProfile.roles}
+              </p>
+            </header>
             <p>{founderProfile.introduction}</p>
             {founderProfile.paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
