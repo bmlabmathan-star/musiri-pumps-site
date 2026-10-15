@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { FounderPhotoGallery } from "@/components/about/FounderPhotoGallery";
 import { founderProfile } from "@/data/about";
+import { salesLeadProfile } from "@/data/sales-lead";
 
 export const metadata: Metadata = {
   title: "About the Founder",
@@ -83,6 +84,43 @@ export default function AboutPage() {
             </blockquote>
           </article>
         </div>
+
+        <section className="mt-16 border-t border-navy/10 pt-12" aria-labelledby="sales-lead-name">
+          <div className="grid items-start gap-8 lg:grid-cols-[minmax(220px,0.65fr)_minmax(0,1.6fr)] lg:gap-12">
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-2xl bg-slate-100 shadow-lg ring-1 ring-navy/10">
+              <Image
+                src={salesLeadProfile.photo}
+                alt="Mathavaraj Govindan"
+                fill
+                sizes="(max-width: 1024px) 100vw, 300px"
+                className="object-cover"
+              />
+            </div>
+
+            <div className="space-y-5 text-base leading-8 text-steel">
+              <header className="border-b border-navy/10 pb-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-water">
+                  Sales &amp; Marketing
+                </p>
+                <h2 id="sales-lead-name" className="mt-2 font-serif text-3xl leading-tight text-navy sm:text-4xl">
+                  {salesLeadProfile.name}
+                </h2>
+                <p className="mt-2 text-sm font-medium leading-6 text-steel sm:text-base">
+                  {salesLeadProfile.role}
+                </p>
+              </header>
+
+              {salesLeadProfile.paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+
+              <p className="rounded-xl border-l-4 border-water bg-sky-50 px-5 py-4 text-navy">
+                <strong>His focus:</strong> {salesLeadProfile.focus}
+              </p>
+            </div>
+          </div>
+        </section>
+
         <FounderPhotoGallery />
       </Container>
     </>
