@@ -21,14 +21,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-navy">
       <Container className="flex items-center justify-between gap-4 py-3">
-        <Link href="/" className="flex items-center gap-2 text-white">
+        <Link href="/" className="flex items-center gap-3 text-white">
           <Image
             src="/musiri-pumps-logo.jpg"
             alt="Musiri Pumps logo"
             width={120}
             height={88}
             priority
-            className="h-10 w-14 rounded bg-white object-contain"
+            className="h-12 w-[4.25rem] rounded bg-white object-contain sm:h-14 sm:w-20"
           />
           <span className="leading-tight">
             <span className="block text-sm font-semibold tracking-wide">{site.name}</span>
