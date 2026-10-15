@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { FounderPhotoGallery } from "@/components/about/FounderPhotoGallery";
 import { founderProfile } from "@/data/about";
 
 export const metadata: Metadata = {
@@ -82,6 +83,7 @@ export default function AboutPage() {
             </blockquote>
           </article>
         </div>
+        <FounderPhotoGallery />
       </Container>
     </>
   );

@@ -38,8 +38,40 @@ body {
   animation: river-current 5s linear infinite;
 }
 
+@keyframes founder-gallery-forward {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.founder-gallery-track {
+  animation: founder-gallery-forward 42s linear infinite;
+  width: max-content;
+}
+
+.founder-gallery-track-reverse {
+  animation-direction: reverse;
+}
+
+.founder-gallery-rail:hover .founder-gallery-track,
+.founder-gallery-rail:focus-within .founder-gallery-track {
+  animation-play-state: paused;
+}
+
+.founder-gallery-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.founder-gallery-rail {
+  scrollbar-width: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .footer-river-flow {
+    animation: none;
+  }
+
+  .founder-gallery-track {
     animation: none;
   }
 }
