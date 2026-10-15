@@ -5,11 +5,11 @@ export type NavItem = {
 
 export const primaryNav: NavItem[] = [
   { href: "/", label: "Home" },
+  { href: "/about", label: "About Us" },
   { href: "/products", label: "Products" },
   { href: "/applications", label: "Applications" },
-  { href: "/about", label: "About Us" },
-  { href: "/contact", label: "Contact Us" },
   { href: "/become-partner", label: "Become a Partner" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export const accountNav: NavItem[] = [
