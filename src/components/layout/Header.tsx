@@ -31,7 +31,9 @@ export function Header() {
             className="h-14 w-20 rounded bg-white object-contain sm:h-18 sm:w-24"
           />
           <span className="leading-tight">
-            <span className="block text-sm font-semibold tracking-wide">{site.name}</span>
+            <span className="block text-lg font-semibold tracking-wide sm:text-xl">
+              {site.name}
+            </span>
             <span className="block text-[11px] uppercase tracking-[0.16em] text-water">
               {site.tagline}
             </span>
