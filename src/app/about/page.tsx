@@ -7,6 +7,7 @@ import { TeamMemberCard } from "@/components/about/TeamMemberCard";
 import { founderProfile } from "@/data/about";
 import { salesLeadProfile } from "@/data/sales-lead";
 import { operationsLeadProfile } from "@/data/operations-lead";
+import { strategicAlliancesLeadProfile } from "@/data/strategic-alliances-lead";
 
 export const metadata: Metadata = {
   title: "About the Founder",
@@ -91,8 +92,8 @@ export default function AboutPage() {
           <h2 id="team-section-title" className="mb-7 font-serif text-2xl text-navy sm:text-3xl">
             Team
           </h2>
-          <div className="grid items-start gap-6 xl:grid-cols-2">
-            {[salesLeadProfile, operationsLeadProfile].map((profile) => (
+          <div className="grid items-start gap-6 xl:grid-cols-3">
+            {[salesLeadProfile, operationsLeadProfile, strategicAlliancesLeadProfile].map((profile) => (
               <TeamMemberCard key={profile.name} profile={profile} />
             ))}
           </div>
